@@ -1,12 +1,12 @@
 #include<bits/stdc++.h>
 using namespace std;
-void c(){
+void c(){//清屏 
 	system("cls");
 }
-void s(string a){
+void s(string a){//cout
 	cout<<a;
 }
-bool ask(){
+bool ask(){//询问是否懂 
 	int a;
 	s("\n懂了吗?(1.懂了2.没懂)\n");
 	cin>>a;
@@ -18,7 +18,7 @@ bool ask(){
 		return false;
 	}
 }
-void SLEEP(int x){ //延时x毫秒 
+void SLEEP(int x){
 	clock_t now=clock(); 
 	while(clock()-now<x); 
 } 
@@ -72,6 +72,10 @@ int main(){
 						s("首先,#include<bits/stdc++.h>是头文件,包括");
 						s("c++里所有函数");
 					}while(!ask());
+					c()
+					do{
+						s("接着,using namespace std;是名域,不用理解") 
+					}
 				}
 				else if(a==2) s("对不起,功能正在制作\n");
 			}
